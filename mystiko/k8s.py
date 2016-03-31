@@ -1,3 +1,7 @@
+import os
+import re
+
+
 def get_kubernetes_secrets_file_dicts(directory):
     """
     Retrieves secrets files from the given directory that match the hyphenated
