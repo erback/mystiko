@@ -21,7 +21,7 @@ Assuming you have given Kubernetes a secret with key "db-password"::
 
     from mystiko import k8s
     k8s_secrets = k8s.get_secrets()
-    db_pwd = k8s_secrets['db-password']
+    db_pwd = k8s_secrets['DB_PASSWORD']
 
 The default secrets directory is `/etc/secrets/`.  If you are using a different
 directory, supply it to the `get_secrets` function::
